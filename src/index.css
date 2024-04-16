@@ -1,0 +1,15 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.searchCountries {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.searchCountries > label {
+  margin-inline-end: 1rem;
+  
+}
