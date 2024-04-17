@@ -2,6 +2,7 @@ import countryServices from './services/countryServices';
 import { useState } from 'react';
 import "./index.css";
 import { useEffect } from 'react';
+import ShortView from './components/ShortView';
 
 
 const App = () => {
@@ -35,24 +36,7 @@ const App = () => {
   };
 
   
-  const ShortView = ({ country }) => {
-    return (
-      <div>
-          <h1>{country.name.common}</h1>
-          <p>Capital: {country.capital[0]}</p>
-          <p>Area: {country.area}</p>
-          <h2>Languages:</h2>
-          <ul>
-          {Object.keys(country.languages).map((key) => 
-            <li key={key}>{country.languages[key]}</li>
-          )}
-        </ul>
-        <img alt={country.flags.alt} src={country.flags.svg} width={200} height={150}/>
-                    
-        </div>
-    )
-
-  }
+  
 
   return (
     <>
