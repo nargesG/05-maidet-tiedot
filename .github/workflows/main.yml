@@ -27,6 +27,8 @@ jobs:
     strategy:
       matrix:
         node-version: [21.x]
+    env:
+      VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
